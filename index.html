@@ -1,66 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Andreea's CV</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body >
+  <body>
     <header>
-        <div id="header-wrapper">
-            <div id="my-picture">
-                <img src="poza.jpeg" alt="Poza" height="100">
-            </div>
-            <div id="header-info">
-                <h1>Radac Andreea</h1>
-                <h2 id="job-title">QA Automation Engineer</h2> 
-            </div>
+      <div id="header-wrapper">
+        <div id="my-picture">
+          <img src="poza.jpeg" alt="Poza" height="100" />
         </div>
-        <ul id="top-menu-bar">
-            <li>
-                <a href="">Home</a>
-            </li>
-            <li>
-                <a href="">Skills</a>
-            </li>
-            <li>
-                <a href="">Projects</a>
-            </li>
-            <li>
-                <a href="">Languages</a>
-            </li>
-        </ul>
+        <div id="header-info">
+          <h1>Radac Andreea</h1>
+          <h2 id="job-title">QA Automation Engineer</h2>
+        </div>
+      </div>
+      <ul id="top-menu-bar">
+        <li>
+          <a href="#" data-page="home">Home</a>
+        </li>
+        <li>
+          <a href="#" data-page="skills">Skills</a>
+        </li>
+        <li>
+          <a href="#" data-page="projects">Projects</a>
+        </li>
+        <li>
+          <a href="#" data-page="languages">Languages</a>
+        </li>
+      </ul>
     </header>
 
     <section id="content">
-        <div id="side-menu">
-            <section>
-                <form action="" method="post">
-                    <label for="userEmail">Email</label>
-                    <input type="email" name="email" id="userEmail"></input>
-                
-                    <button type="submit">Send</button>
-                </form>
-            </section>
-            <section>
-                Menu 2
-            </section>
+      <div id="side-menu">
+        <section>
+          <h2>Contact</h2>
+          <form id="contact-form" action="" method="post">
+            <div class="form-row">
+              <label for="userName">Name</label>
+              <input type="text" name="Name" id="userName" required />
+            </div>
+            <div class="form-row">
+              <label for="userEmail">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="userEmail"
+                placeholder="example@job.com"
+                required
+              />
+            </div>
+            <div class="actions">
+              <button type="submit">Send</button>
+            </div>
+          </form>
+        </section>
+        <section>M2</section>
+      </div>
+      <div id="main">
+        <div class="page" id="home">Home content...</div>
+        <div class="page" id="skills">
+            <h2>Skills & Endorcements</h2>
+            <ul></ul>
         </div>
-        <div id="main">
-            Main Content
-        </div>
+        <div class="page" id="projects">Projects content ...</div>
+        <div class="page" id="languages">Languages<div>
+      </div>
     </section>
-
+    <script src="index.js"></script>
     <footer>
-        <a href="">LinkedIn</a>
+      <a href="">LinkedIn</a>
     </footer>
-
-    <script>
-        console.info("start");
-        var a = true;
-    </script>
-</body>
+  </body>
 </html>
